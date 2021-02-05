@@ -62,4 +62,4 @@ wh1tney (https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489.js)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
