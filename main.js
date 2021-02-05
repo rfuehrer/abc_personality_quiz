@@ -15,6 +15,28 @@ const previousButton = document.querySelector('.previous');
 const restartButton = document.querySelector('.restart');
 const result = document.querySelector('.result');
 
+// Function get get most frequent item in array
+function findMostFrequest(arr) {
+    let compare = "";
+    let mostFreq = "";
+
+    arr.reduce((acc, val) => {
+      if(val in acc){               // if key already exists
+         acc[val]++;                // then increment it by 1
+      }else{
+         acc[val] = 1;      // or else create a key with value 1
+      }
+      if(acc[val] > compare){   // if value of that key is greater
+                                // than the compare value.
+         compare = acc[val];    // than make it a new compare value.
+         mostFreq = val;        // also make that key most frequent.
+      }
+      return acc;
+    }, {})
+//    console.log("Most Frequent Item is:", mostFreq);
+    return mostFreq;
+}
+
 //Function to generate question 
 function generateQuestions (index) {
     //Select each question by passing it a particular index
@@ -47,13 +69,12 @@ function loadNextQuestion () {
         return;
     }
     //Get value of selected radio
-    const answerScore = Number(selectedOption.nextElementSibling.getAttribute('data-total'));
+    const answerScore = selectedOption.nextElementSibling.getAttribute('data-total');
 
     ////Add the answer score to the score array
     score.push(answerScore);
 
     selectedAnswersData.push()
-    
 
     const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
@@ -64,22 +85,41 @@ function loadNextQuestion () {
         selectedOption.checked = false;
     //If quiz is on the final question
     if(currentQuestion == totalQuestions - 1) {
-        nextButton.textContent = 'Geschafft!';
+        nextButton.textContent = 'Gleich geschafft...';
     }
     //If the quiz is finished then we hide the questions container and show the results 
     if(currentQuestion == totalQuestions) {
+        var VARmost = findMostFrequest(score);
+        var VARout = VARmost.toString();
+        switch(VARout) {
+            case "A":
+                var VARteam = "Team A";
+                break;
+            case "B":
+                var VARteam = "Team B";
+                break;
+            case "C":
+                var VARteam = "Team C";
+                break;
+            case "D":
+                var VARteam = "Team D";
+                break;
+            case "E":
+                var VARteam = "Team E";
+                break;
+            default:
+              var VARteam = "Empfang"
+        }
+
         container.style.display = 'none';
         result.innerHTML =
-         `<h1 class="final-score">Deine Punkte: ${totalScore}</h1>
+         `<h1 class="final-score"></h1>
          <div class="summary">
-            <h1>Zusammenfassung</h1>
-            <p>Wir haben ermittelt, dass Du am besten in folgenden Circle passt:</p>
-            <p>15 - 21- You Need Help</p>
-            <p>10 - 15 - Good Soul</p>
-            <p>5 - 10 - Meh </p>
-            <p>5 - Are You Even Real</p>
+            <h1 class="final-score">Du gehörst eindeutig ins Team:</h1>
+            <h2 class="final-team">${VARteam}</h2>
+            <p>Nimm am besten gleich mit dem Repräsentaten des Teams Kontakt auf!</p>
         </div>
-        <button class="restart">Restart Quiz</button>
+        <button class="restart">Quiz neu starten</button>
          `;
         return;
     }
