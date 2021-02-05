@@ -46,6 +46,7 @@ Heroku hosts *apps* on the internet, not static websites. To get it to run your 
 **Note:** Step 4. is necessary to avoid possible conflicts in prioritizing the display of index.html and index.php.
 
 ### Test
+
 Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP app). Within Github you a reference is displayed within the `Environment` section (if set to visible).
 
 ## Authors
@@ -57,8 +58,7 @@ Done! Visit your deployed single-page website, hosted by Heroku (as a fake PHP a
 
 Orginal repo published by Evans Dube (https://github.com/edubz99/Simple-Personality-Quiz)
 
-Instructions how to host a static webpages at Heroku by 
-wh1tney (https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489.js)
+Instructions how to host a static webpage at Heroku by wh1tney (https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489.js)
 
 ## License
 
