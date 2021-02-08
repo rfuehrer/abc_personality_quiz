@@ -15,6 +15,8 @@ const previousButton = document.querySelector('.previous');
 const restartButton = document.querySelector('.restart');
 const result = document.querySelector('.result');
 
+result.style.display = 'none';
+
 // Function get get most frequent item in array
 function findMostFrequest(arr) {
     let compare = "";
@@ -112,6 +114,7 @@ function loadNextQuestion () {
         }
 
         container.style.display = 'none';
+        result.style.display = 'flex';
         result.innerHTML =
          `<h1 class="final-score"></h1>
          <div class="summary">
