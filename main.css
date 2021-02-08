@@ -31,14 +31,13 @@ body {
   margin-bottom: 3rem;
   color: #00000050;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
 }
 .question {
   margin: 2rem 0;
-  font-size: 1.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .option {
   padding: 1rem;
@@ -46,7 +45,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   width: 80%;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: all 0.3s;
 }
 .option:hover {
@@ -65,7 +64,7 @@ button {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
   outline: none;
   transform: scale(0.98);
