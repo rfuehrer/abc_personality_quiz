@@ -10,6 +10,7 @@ const option2 = document.querySelector('.option2');
 const option3 = document.querySelector('.option3');
 const option4 = document.querySelector('.option4');
 const option5 = document.querySelector('.option5');
+
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const restartButton = document.querySelector('.restart');
