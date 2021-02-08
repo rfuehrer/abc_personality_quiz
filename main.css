@@ -11,7 +11,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  line-height: 1.7rem;
+  line-height: 2.3rem;
   background: no-repeat #3B3B3B;
 }
 .quiz-container {
@@ -32,6 +32,7 @@ body {
   color: #00000050;
   font-weight: 400;
   font-size: 4rem;
+  line-height: 2.3rem;
   text-align: center;
   text-transform: uppercase;
 }

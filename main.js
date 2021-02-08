@@ -4,7 +4,10 @@ let selectedAnswersData = [];
 const totalQuestions =questions.length;
 
 const container = document.querySelector('.quiz-container');
-const questionEl = document.querySelector('.question');
+//const questionElNum = document.querySelector('.questionNumber');
+//const questionEl = document.querySelector('.questionText');
+const questionElNum = document.getElementById('questionNumber');
+const questionEl = document.getElementById('questionText');
 const option1 = document.getElementById('option1');
 const option2 = document.getElementById('option2');
 const option3 = document.getElementById('option3');
@@ -50,7 +53,8 @@ function generateQuestions (index) {
     const option4Total = questions[index].answer4Total;
     const option5Total = questions[index].answer5Total;
     //Populate html elements 
-    questionEl.innerHTML = `${index + 1}. ${question.question}`
+    questionElNum.innerHTML = `${index + 1}`
+    questionEl.innerHTML = `${question.question}`
     option1.setAttribute('data-total', `${option1Total}`);
     option2.setAttribute('data-total', `${option2Total}`);
     option3.setAttribute('data-total', `${option3Total}`);
