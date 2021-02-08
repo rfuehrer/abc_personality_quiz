@@ -93,19 +93,19 @@ function loadNextQuestion () {
         var VARout = VARmost.toString();
         switch(VARout) {
             case "A":
-                var VARteam = "Team A";
+                var VARteam = "Team Publicity";
                 break;
             case "B":
-                var VARteam = "Team B";
+                var VARteam = "Team Communities";
                 break;
             case "C":
-                var VARteam = "Team C";
+                var VARteam = "Team Qualifications";
                 break;
             case "D":
-                var VARteam = "Team D";
+                var VARteam = "Team HR Solutions";
                 break;
             case "E":
-                var VARteam = "Team E";
+                var VARteam = "Team Conference";
                 break;
             default:
               var VARteam = "Empfang"
