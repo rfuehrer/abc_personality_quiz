@@ -129,3 +129,7 @@ button:focus {
 .summary h1 {
   align-self: center;
 }
+
+#id {
+  padding-right:50px;
+}

@@ -5,11 +5,11 @@ const totalQuestions =questions.length;
 
 const container = document.querySelector('.quiz-container');
 const questionEl = document.querySelector('.question');
-const option1 = document.querySelector('.option1');
-const option2 = document.querySelector('.option2');
-const option3 = document.querySelector('.option3');
-const option4 = document.querySelector('.option4');
-const option5 = document.querySelector('.option5');
+const option1 = document.getElementById('option1');
+const option2 = document.getElementById('option2');
+const option3 = document.getElementById('option3');
+const option4 = document.getElementById('option4');
+const option5 = document.getElementById('option5');
 
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
@@ -72,7 +72,8 @@ function loadNextQuestion () {
         return;
     }
     //Get value of selected radio
-    const answerScore = selectedOption.nextElementSibling.getAttribute('data-total');
+    var myvalue=selectedOption.value;
+    const answerScore=document.getElementById('option'+myvalue).getAttribute('data-total')
 
     ////Add the answer score to the score array
     score.push(answerScore);
