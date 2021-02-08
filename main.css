@@ -79,13 +79,13 @@ button.next {
 }
 button.restart {
   background: #3c91e6;
-  color: #00000050;
+  color: #d3d3d350;
   font-size: 2rem;
   margin-bottom: 1rem;
   transition: all 0.4s;
 }
 button.restart:hover {
-  color: #00000098;
+  color: #ffffff98;
 }
 button:hover,
 button:focus {
@@ -127,6 +127,10 @@ button:focus {
   margin-bottom: 2rem;
 }
 .summary h1 {
+  align-self: center;
+}
+
+.summary h2 {
   align-self: center;
 }
 
