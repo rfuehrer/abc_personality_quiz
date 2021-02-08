@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #FFFFFF;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
 }
 .title {
   margin-top: 0;
