@@ -72,10 +72,10 @@ button.previous {
   background: #c84630;
 }
 button.next {
-  background: #3c91e6;
+  background: #0cf574;
 }
 button.restart {
-  background: #0cf574;
+  background: #3c91e6;
   color: #00000050;
   font-size: 2rem;
   margin-bottom: 1rem;
